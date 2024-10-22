@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYU-TMS</title>
+</head>
+<body>
+    <div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="https://www.oyu.edu.az/" target="_blank">
+                <span  class="icon">
+                    <img class="logoImg" src="img/logo-small.png" width="50" alt="shekil yuklenmedi">
+                </span>
+                <span class="title"><h5>Odlar Yurdu Universiteti</h5></span>
+            </a>
+            </li>
+            <li>
+                <a href="index.html">
+                <span  class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span class="title">Ana səhifə</span>
+                </a>
+            </li>
+            <li>
+                <a href="bullhorn.html">
+                <span  class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+                <span class="title">Elanlar</span>
+                </a>
+            </li>
+            <li>
+                <a href="priceTable.html">
+                <span  class="icon"><i class="fa fa-500px" aria-hidden="true"></i></span>
+                <span class="title">Qiymət cədvəli</span>
+                </a>
+            </li>
+            <li>
+                <a href="jurnal.html">
+                <span  class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                <span class="title">Elektron jurnal</span>
+                </a>
+            </li>
+            <li>
+                <a href="transkript.html">
+                <span  class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                <span class="title">Transkript</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="turnstile.html">
+                <span  class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="title">Turniket qeydləri</span>
+                </a>
+            </li>
+            <li>
+                <li>
+                    <a href="onlineservice.html">
+                    <span  class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="title">Onlayn xidmətlər</span>
+                    </a>
+                </li>
+                <li>
+                    <li>
+                        <a href="booksearch.html">
+                        <span  class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Kitabxana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html">
+                        <span  class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Tənzimləmələr</span>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <li>
+                            <a href="contact.html">
+                            <span  class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="title">Əlaqə</span>
+                            </a>
+                        </li>
+                        <li>
+
+                <a href="signin.html">
+                <span  class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                <span class="title">Çıxış</span>
+                </a>
+                <br/>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();">
+
+            </div>
+            <div class="search">
+                <label for="">
+                  <input type="text" placeholder="səhifədə axtarış edin...">  
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+                
+            </div>
+            <div class="user">
+                <a href="index.html"><img src="img/3x4.jpg" alt="shekil yuklenmedi"></a>
+            </div>
+        </div>
+
+        <!-- turnstile -->
+
+        <div class="table">
+            <form action="#">
+            <table style="width:100%">
+                <tr>
+                  <td colspan="15" class="price">
+                    Kart sistemi
+                    <p class="pTag">Başlanğıc tarix: 
+                      <input class="formControl" style="margin-right: 10px;" type="date">
+                       Son tarix:
+                      <input class="formControl" type="date">
+                      <br />
+                    <button class="resultBtn">Nəticələri göstər</button>
+                    <button class="printBtn" onclick="window.print()">Çap et</button>
+                  </p>
+                  </td>
+                </tr>
+        
+                <tr class="priceTitle">
+                  <td>№</td>
+                  <td>Adı soyadı</td>
+                  <td>Tarix</td>
+                  <td>Gün</td>
+                  <td>Giriş saatı</td>
+                  <td>Çıxış saatı</td>
+                  <td>Qaldığı müddət</td>
+                </tr>
+        
+                <tr>
+                  <td>1</td>
+                  <td>Amin Həsənov</td>
+                  <td>18.10.2019</td>
+                  <td>Cümə</td>
+                  <td>14:20</td>
+                  <td>14:36</td>
+                  <td>16 dəq.</td>
+                </tr>
+        
+                <tr>
+                  <td>2</td>
+                  <td>Amin Həsənov</td>
+                  <td>04.07.2019</td>
+                  <td>Cümə axşamı</td>
+                  <td>09:28</td>
+                  <td>09:31</td>
+                  <td>3 dəq.</td>
+                </tr>
+        
+                <tr>
+                  <td>3</td>
+                  <td>Amin Həsənov</td>
+                  <td>27.06.2019</td>
+                  <td>Cümə axşamı</td>
+                  <td>09:36</td>
+                  <td>12:47</td>
+                  <td>3 saat. 10 dəq.</td>
+                </tr>
+        
+                
+                <tr>
+                  <td>4</td>
+                  <td>Amin Həsənov</td>
+                  <td>21.06.2019</td>
+                  <td>Cümə</td>
+                  <td>16:11</td>
+                  <td>21:36</td>
+                  <td>5 saat. 25 dəq.</td>
+                </tr>
+        
+                
+                <tr>
+                  <td>5</td>
+                  <td>Amin Həsənov</td>
+                  <td>19.06.2019</td>
+                  <td>Çərşənbə</td>
+                  <td>14:00</td>
+                  <td>14:57</td>
+                  <td>56 dəq.</td>
+                </tr>
+
+                <tr>
+                    <td class="total" colspan="7">
+                        Toplam vaxt: 11 saat. 41 dəq.
+                    </td>
+                </tr>
+        
+              </table>
+            </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

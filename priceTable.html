@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYU-TMS</title>
+</head>
+<body>
+    <div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="https://www.oyu.edu.az/" target="_blank">
+                <span  class="icon">
+                    <img class="logoImg" src="img/logo-small.png" width="50" alt="shekil yuklenmedi">
+                </span>
+                <span class="title"><h5>Odlar Yurdu Universiteti</h5></span>
+            </a>
+            </li>
+            <li>
+                <a href="index.html">
+                <span  class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span class="title">Ana səhifə</span>
+                </a>
+            </li>
+            <li>
+                <a href="bullhorn.html">
+                <span  class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+                <span class="title">Elanlar</span>
+                </a>
+            </li>
+            <li>
+                <a href="priceTable.html">
+                <span  class="icon"><i class="fa fa-500px" aria-hidden="true"></i></span>
+                <span class="title">Qiymət cədvəli</span>
+                </a>
+            </li>
+            <li>
+                <a href="jurnal.html">
+                <span  class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                <span class="title">Elektron jurnal</span>
+                </a>
+            </li>
+            <li>
+                <a href="transkript.html">
+                <span  class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                <span class="title">Transkript</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="turnstile.html">
+                <span  class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="title">Turniket qeydləri</span>
+                </a>
+            </li>
+            <li>
+                <li>
+                    <a href="onlineservice.html">
+                    <span  class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="title">Onlayn xidmətlər</span>
+                    </a>
+                </li>
+                <li>
+                    <li>
+                        <a href="booksearch.html">
+                        <span  class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Kitabxana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html">
+                        <span  class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Tənzimləmələr</span>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <li>
+                            <a href="contact.html">
+                            <span  class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="title">Əlaqə</span>
+                            </a>
+                        </li>
+                        <li>
+
+                <a href="signin.html">
+                <span  class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                <span class="title">Çıxış</span>
+                </a>
+                <br/>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();">
+
+            </div>
+            <div class="search">
+                <label for="">
+                  <input type="text" placeholder="səhifədə axtarış edin...">  
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+                
+            </div>
+            <div class="user">
+                <a href="index.html"><img src="img/3x4.jpg" alt="shekil yuklenmedi"></a>
+            </div>
+        </div>
+<!-- price table -->
+<div class="table">
+    <form action="#">
+    <table style="width:100%">
+        <tr>
+          <td colspan="15" class="price">
+            Qiymət cədvəli
+            <p class="pTag">İl və semestr:
+
+            <select class="formControl" name="price" id="price">
+              <option value="all">Hamısını göstər</option>
+              <option value="one">(2018-2019) 1-ci semestr</option>
+              <option value="two">(2018-2019) 2-ci semestr</option>
+              <option value="three">(2019-2020) 1-ci semestr</option>
+              <option value="four">(2019-2020) 2-ci semestr</option>
+              <option value="five">(2020-2021) 1-ci semestr</option>
+              <option value="six">(2020-2021) 2-ci semestr</option>
+            </select>
+            <button class="btnShow">Göstər</button>
+          </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="15">
+            <p class="textTable">2018-2019 1. semester</p>
+          </td>
+        </tr>
+
+        <tr class="priceTitle">
+          <td>Dərs kodu</td>
+          <td title="seriya kodu">N</td>
+          <td title="yay dersinin kodu">Y</td>
+          <td>Dərsin adı</td>
+          <td title="dərsin krediti">AKTS</td>
+          <td title="Dərsdə iştirak etməmək sayı">Dav</td>
+          <td title="semestr daxili fəaliyyət 1">SDF1</td>
+          <td title="semestr daxili fəaliyyət 2">SDF2</td>
+          <td title="semestr daxili fəaliyyət 3">SDF3</td>
+          <td title="tələbənin sərbəst işi">TSİ</td>
+          <td title="davamiyyət balı">DVM</td>
+          <td title="semestr sonu imtahan">SSİ</td>
+          <td title="əlavə imtahan">Əİ</td>
+          <td title="Təkrar imtahan">Tİ</td>
+          <td title="ortalama qiymət">ORT</td>
+        </tr>
+
+        <tr>
+          <td>KOMP421</td>
+          <td>01</td>
+          <td>00</td>
+          <td maxlength="50">Kompyuter arxitekturası</td>
+          <td>5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>90</td>
+          <td>78</td>
+          <td>80</td>
+          <td>95</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>87</td>
+        </tr>
+
+        <tr>
+          <td>KOMP574</td>
+          <td>02</td>
+          <td>00</td>
+          <td maxlength="50">Verilənlər bazası idarəetmə sistemləri</td>
+          <td>4</td>
+          <td>1</td>
+          <td>100</td>
+          <td>90</td>
+          <td>78</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>88</td>
+        </tr>
+
+        <tr>
+          <td>KOMP385</td>
+          <td>03</td>
+          <td>00</td>
+          <td maxlength="50">Əməliyyat sistemləri</td>
+          <td>3</td>
+          <td>1</td>
+          <td>78</td>
+          <td>100</td>
+          <td>78</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>91</td>
+        </tr>
+
+        
+        <tr>
+          <td>KOMP325</td>
+          <td>04</td>
+          <td>00</td>
+          <td maxlength="50">İnformasiya mühafizəsi</td>
+          <td>6</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100</td>
+          <td>85</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>93</td>
+        </tr>
+
+        
+        <tr>
+          <td>KOMP715</td>
+          <td>05</td>
+          <td>00</td>
+          <td maxlength="50">Kompyuter şəbəkələri</td>
+          <td>4</td>
+          <td>1</td>
+          <td>70</td>
+          <td>100</td>
+          <td>78</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>83</td>
+        </tr>
+
+        <tr>
+          <td colspan="4" style="text-align: right;">
+            Cəmi akts:
+          </td>
+          <td>22</td>
+
+          <td colspan="9" style="text-align: right;">
+            Ümumi dərs ortalaması:
+          </td>
+          <td>92.3</td>
+        </tr>
+
+        <!-- 2ci semestr -->
+
+        <tr>
+          <td colspan="15">2018-2019 2. semester</td>
+        </tr>
+        
+        <tr class="priceTitle">
+          <td>Dərs kodu</td>
+          <td title="seriya kodu">N</td>
+          <td title="yay dersinin kodu">Y</td>
+          <td>Dərsin adı</td>
+          <td title="dərsin krediti">AKTS</td>
+          <td title="Dərsdə iştirak etməmək sayı">Dav</td>
+          <td title="semestr daxili fəaliyyət 1">SDF1</td>
+          <td title="semestr daxili fəaliyyət 2">SDF2</td>
+          <td title="semestr daxili fəaliyyət 3">SDF3</td>
+          <td title="tələbənin sərbəst işi">TSİ</td>
+          <td title="davamiyyət balı">DVM</td>
+          <td title="semestr sonu imtahan">SSİ</td>
+          <td title="əlavə imtahan">Əİ</td>
+          <td title="Təkrar imtahan">Tİ</td>
+          <td title="ortalama qiymət">ORT</td>
+        </tr>
+
+        <tr>
+          <td>KOMP771</td>
+          <td>01</td>
+          <td>00</td>
+          <td maxlength="50">Sahibkarlığın əsasları</td>
+          <td>5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>90</td>
+          <td>78</td>
+          <td>80</td>
+          <td>95</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>87</td>
+        </tr>
+
+        <tr>
+          <td>KOMP574</td>
+          <td>02</td>
+          <td>00</td>
+          <td maxlength="50">Verilənlər bazası idarəetmə sistemləri</td>
+          <td>4</td>
+          <td>1</td>
+          <td>100</td>
+          <td>90</td>
+          <td>78</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>88</td>
+        </tr>
+
+        <tr>
+          <td>KOMP385</td>
+          <td>03</td>
+          <td>00</td>
+          <td maxlength="50">Əməliyyat sistemləri</td>
+          <td>3</td>
+          <td>1</td>
+          <td>78</td>
+          <td>100</td>
+          <td>78</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>91</td>
+        </tr>
+
+        
+        <tr>
+          <td>KOMP325</td>
+          <td>04</td>
+          <td>00</td>
+          <td maxlength="50">Mühəndis iqtisadiyyatı</td>
+          <td>6</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100</td>
+          <td>85</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>93</td>
+        </tr>
+
+        
+        <tr>
+          <td>KOMP715</td>
+          <td>05</td>
+          <td>00</td>
+          <td maxlength="50">Diskret riyaziyyat</td>
+          <td>4</td>
+          <td>1</td>
+          <td>70</td>
+          <td>100</td>
+          <td>78</td>
+          <td>80</td>
+          <td>90</td>
+          <td>85</td>
+          <td>0</td>
+          <td>0</td>
+          <td>83</td>
+        </tr>
+
+        <tr>
+          <td colspan="4" style="text-align: right;">
+            Cəmi akts:
+          </td>
+          <td>22</td>
+
+          <td colspan="9" style="text-align: right;">
+            Ümumi dərs ortalaması:
+          </td>
+          <td>82.4</td>
+        </tr>
+
+
+      </table>
+    </form>
+    </div>
+</div>
+</div>
+
+
+<script>
+    function toggleMenu(){
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

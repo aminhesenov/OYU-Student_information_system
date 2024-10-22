@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYU-TMS</title>
+</head>
+<body>
+    <div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="https://www.oyu.edu.az/" target="_blank">
+                <span  class="icon">
+                    <img class="logoImg" src="img/logo-small.png" width="50" alt="shekil yuklenmedi">
+                </span>
+                <span class="title"><h5>Odlar Yurdu Universiteti</h5></span>
+            </a>
+            </li>
+            <li>
+                <a href="index.html">
+                <span  class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span class="title">Ana səhifə</span>
+                </a>
+            </li>
+            <li>
+                <a href="bullhorn.html">
+                <span  class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+                <span class="title">Elanlar</span>
+                </a>
+            </li>
+            <li>
+                <a href="priceTable.html">
+                <span  class="icon"><i class="fa fa-500px" aria-hidden="true"></i></span>
+                <span class="title">Qiymət cədvəli</span>
+                </a>
+            </li>
+            <li>
+                <a href="jurnal.html">
+                <span  class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                <span class="title">Elektron jurnal</span>
+                </a>
+            </li>
+            <li>
+                <a href="transkript.html">
+                <span  class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                <span class="title">Transkript</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="turnstile.html">
+                <span  class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="title">Turniket qeydləri</span>
+                </a>
+            </li>
+            <li>
+                <li>
+                    <a href="onlineservice.html">
+                    <span  class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="title">Onlayn xidmətlər</span>
+                    </a>
+                </li>
+                <li>
+                    <li>
+                        <a href="booksearch.html">
+                        <span  class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Kitabxana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html">
+                        <span  class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Tənzimləmələr</span>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <li>
+                            <a href="contact.html">
+                            <span  class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="title">Əlaqə</span>
+                            </a>
+                        </li>
+                        <li>
+
+                <a href="signin.html">
+                <span  class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                <span class="title">Çıxış</span>
+                </a>
+                <br/>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();">
+
+            </div>
+            <div class="search">
+                <label for="">
+                  <input type="text" placeholder="səhifədə axtarış edin...">  
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+                
+            </div>
+            <div class="user">
+                <a href="index.html"><img src="img/3x4.jpg" alt="shekil yuklenmedi"></a>
+            </div>
+        </div>
+        <!-- jurnal -->
+<div class="table">
+    <form action="#">
+    <table style="width:100%">
+        <tr>
+          <td colspan="15" class="price">
+            Elektron jurnal
+            <p class="pTag">İl və semestr:
+
+            <select class="formControl" name="price" id="price">
+              <option value="choose" selected="true" disabled>Seçin</option>
+              <option value="one">(2018-2019) 1-ci semestr</option>
+              <option value="two">(2018-2019) 2-ci semestr</option>
+              <option value="three">(2019-2020) 1-ci semestr</option>
+              <option value="four">(2019-2020) 2-ci semestr</option>
+              <option value="five">(2020-2021) 1-ci semestr</option>
+              <option value="six">(2020-2021) 2-ci semestr</option>
+            </select>
+            <button class="btnShow">Göstər</button>
+          </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="15">
+            <p class="textTable">2018-2019 1. semester</p>
+          </td>
+        </tr>
+
+        <tr class="priceTitle">
+          <td>№</td>
+          <td>Kodu</td>
+          <td>Dərsin adı</td>
+          <td>Dərsin müəllimi</td>
+          <td>Kredit</td>
+          <td>Saat</td>
+          <td>Limit</td>
+          <td title="dersde ishtirak sayi">+</td>
+          <td title="qaib sayi">q</td>
+          <td>q%?</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>EM 221-lab</td>
+          <td maxlength="50">Dövrə nəzəriyyəsi</td>
+          <td maxlength="50">Gülnaz Qəhramanova</td>
+          <td>2+0+2</td>
+          <td>30</td>
+          <td>15</td>
+          <td>60</td>
+          <td>0</td>
+          <td>0%</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>ENG201</td>
+          <td maxlength="50">Orta səviyyə İngilis dili I</td>
+          <td maxlength="50">Sevda Hüseynova</td>
+          <td>2+2+0</td>
+          <td>60</td>
+          <td>15</td>
+          <td>55</td>
+          <td>3</td>
+          <td>5%</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>KOMP321</td>
+          <td maxlength="50">Kompyuter dəstəkli dizayn</td>
+          <td maxlength="50">Əsgər Cavadov</td>
+          <td>2+2+0</td>
+          <td>60</td>
+          <td>15</td>
+          <td>59</td>
+          <td>1</td>
+          <td>2%</td>
+        </tr>
+
+        
+        <tr>
+          <td>4</td>
+          <td>KOMP578</td>
+          <td maxlength="50">Ehtimal nəzəriyyəsi və statistika</td>
+          <td maxlength="50">Elm. Dr. Fəxrəddin İsayev</td>
+          <td>2+2+0</td>
+          <td>60</td>
+          <td>15</td>
+          <td>58</td>
+          <td>0</td>
+          <td>0%</td>
+        </tr>
+
+        
+        <tr>
+          <td>5</td>
+          <td>RIY852</td>
+          <td maxlength="50">Diskret riyaziyyat</td>
+          <td maxlength="50">Elmir Adilov</td>
+          <td>4+0+0</td>
+          <td>60</td>
+          <td>15</td>
+          <td>59</td>
+          <td>1</td>
+          <td>2%</td>
+        </tr>
+
+      </table>
+    </form>
+    </div>
+
+</div>
+</div>
+
+
+<script>
+    function toggleMenu(){
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

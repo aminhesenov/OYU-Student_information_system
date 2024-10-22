@@ -1,0 +1,333 @@
+table, th, td {
+    border: 1px solid rgb(77, 76, 76);
+    border-collapse: collapse;
+    padding: 10px;
+    font: normal 15px Arial;
+  }
+  .photo{
+      width: 15%;
+  }
+  .photo img{
+      margin-bottom: 150%;
+      border-radius: 5px;
+  }
+  table{
+      width: 10%;
+  }
+ .table{
+     margin: 50px 10px 20px 10px;
+ }
+ .tdColor{
+     color: red;
+     font-weight: 700;
+ }
+ .headTh{
+     font: bold 20px Arial;
+     color: rgb(8, 57, 131);
+ }
+ .bullhorn{
+     font: normal 15px Arial;
+ }
+ .formControl{
+     height: 30px;
+     padding: 4px 6px;
+     font-size: 14px;
+     color: #555;
+     border-radius: 4px;
+     border: 1px solid rgb(161, 161, 161);
+     outline: none;
+ }
+ .formControl:focus{
+     border-color: #3c8dbc;
+ }
+ .price{
+     font: bold 20px Arial;
+ }
+ .pTag{
+     font: normal 15px Arial;
+     font-weight: 600;
+ }
+ .btnShow{
+     background-color: #3c8dbc;
+     color: white;
+     margin-left: 5px;
+     border-color: #ddd;
+     border-radius: 3px;
+     box-shadow: none;
+     cursor: pointer;
+     height: 29px;
+     width: 8%;
+     font: normal 15px Arial;
+     border: 1px solid transparent;
+ }
+ .priceTitle td{
+     font-weight: 700;
+ }
+ .resultBtn{
+     margin: 10px 0 0 115px;
+     font: normal 15px Arial;
+     cursor: pointer;
+     border: 1px solid transparent;
+     height: 40px;
+     border-radius: 5px;
+     background-color: #3c8dbc;
+     color: white;
+     width: 12.2%;
+ }
+ .resultBtn:focus{
+     border-color: green;
+ }
+ .printBtn{
+    margin: 10px;
+    font: normal 15px Arial;
+    cursor: pointer;
+    border: 1px solid transparent;
+    height: 40px;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #3c8dbc;
+    color: white;
+ }
+ .total{
+    text-align: center; 
+    font: bold 15px Arial;
+ }
+ .serviceBtn{
+    font: normal 16px Arial;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    margin-left: 5px;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid black;
+    text-decoration: none;
+    background: linear-gradient(to left, rgb(255, 255, 255) 50%, #3c8dbc 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+ }
+ .serviceBtn:hover{
+    background-position: left;
+    color: white;
+ }
+.description{
+    font: normal 16px Arial;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 0 0 10px;
+    background-color: #f39c12 !important;
+    color: white;
+    margin-top: 50px;
+}
+table, tr, td {
+    border: 1px solid rgb(77, 76, 76);
+    border-collapse: collapse;
+    padding: 10px;
+    font: normal 15px Arial;
+  }
+  .btnSearch{
+    background-color: #3c8dbc;
+    color: white;
+    margin-left: 10px;
+    border-color: #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    cursor: pointer;
+    height: 30px;
+    width: 8%;
+    font: normal 15px Arial;
+    border: 1px solid transparent;
+  }
+  .btnSearch:hover{
+      background-color: #f39c12;
+  }
+  .passwordDes{
+      font: normal 16px Arial;
+      padding-top: 30px;
+  }
+  .priceTitle{
+      font-weight: 700;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btnEdit{
+    background-color: #3c8dbc;
+    color: white;
+    margin: 20px 0 0 45%;
+    border-color: #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    cursor: pointer;
+    height: 29px;
+    width: 8%;
+    font: normal 15px Arial;
+    border: 1px solid transparent;
+  }
+  .formControlM{
+    height: 30px;
+    width: 45%;
+    margin: 10px 0 0 51px;
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #555;
+    border-radius: 4px;
+    border: 1px solid rgb(161, 161, 161);
+    outline: none;
+}
+.formControlM:focus{
+    border-color: #3c8dbc;
+}
+.formControlA{
+    height: 30px;
+    width: 45%;
+    margin: 10px 0 0 10px;
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #555;
+    border-radius: 4px;
+    border: 1px solid rgb(161, 161, 161);
+    outline: none;
+}
+.formControlA:focus{
+    border-color: #3c8dbc;
+}
+.formControlE{
+    height: 30px;
+    width: 45%;
+    margin: 10px 0 0 95px;
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #555;
+    border-radius: 4px;
+    border: 1px solid rgb(161, 161, 161);
+    outline: none;
+}
+.formControlE:focus{
+    border-color: #3c8dbc;
+}
+.formControlQ{
+    height: 30px;
+    width: 45%;
+    margin: 10px 0 0 15px;
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #555;
+    border-radius: 4px;
+    border: 1px solid rgb(161, 161, 161);
+    outline: none;
+}
+.formControlQ:focus{
+    border-color: #3c8dbc;
+}
+.btnSave{
+    background-color: #3c8dbc;
+    color: white;
+    margin: 10px 0 0 48%;
+    border-color: #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    cursor: pointer;
+    height: 29px;
+    width: 20%;
+    font: normal 15px Arial;
+    border: 1px solid transparent;
+}
+.Category{
+    height: 30px;
+     padding: 4px 6px;
+     margin-top: 20px;
+     width: 30%;
+     font-size: 14px;
+     color: #555;
+     border-radius: 4px;
+     border: 1px solid rgb(161, 161, 161);
+     outline: none;
+}
+.Category:focus{
+    border-color: #3c8dbc;
+}
+.categoryTitle{
+    height: 30px;
+    padding: 4px 6px;
+    margin: 20px 0 0 32px;
+    width: 30%;
+    font-size: 14px;
+    color: #555;
+    border-radius: 4px;
+    border: 1px solid rgb(161, 161, 161);
+    outline: none;
+}
+.categoryTitle:focus{
+    border-color: #3c8dbc;
+}
+.textArea{
+    padding: 4px 6px;
+    margin: 20px 0 0 42px;
+    width: 30%;
+    font-size: 14px;
+    color: #555;
+    border-radius: 4px;
+    border: 1px solid rgb(161, 161, 161);
+    outline: none;
+}
+.textArea:focus{
+    border-color: #3c8dbc;
+}
+.aTag{
+    font: normal 16px Arial;
+    text-decoration: none;
+}
+.preTag{
+    text-align: center; 
+    font: bold 18px Arial; 
+    padding-top: 20px;
+}
+.sendBtn{
+    background-color: #3c8dbc;
+     color: white;
+     margin: 10px 0 0 20%;
+     border-color: #ddd;
+     border-radius: 3px;
+     box-shadow: none;
+     cursor: pointer;
+     height: 29px;
+     width: 8%;
+     font: normal 15px Arial;
+     border: 1px solid transparent;
+}

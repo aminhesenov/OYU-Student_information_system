@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYU-TMS</title>
+</head>
+<body>
+    <div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="https://www.oyu.edu.az/" target="_blank">
+                <span  class="icon">
+                    <img class="logoImg" src="img/logo-small.png" width="50" alt="shekil yuklenmedi">
+                </span>
+                <span class="title"><h5>Odlar Yurdu Universiteti</h5></span>
+            </a>
+            </li>
+            <li>
+                <a href="index.html">
+                <span  class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span class="title">Ana səhifə</span>
+                </a>
+            </li>
+            <li>
+                <a href="bullhorn.html">
+                <span  class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+                <span class="title">Elanlar</span>
+                </a>
+            </li>
+            <li>
+                <a href="priceTable.html">
+                <span  class="icon"><i class="fa fa-500px" aria-hidden="true"></i></span>
+                <span class="title">Qiymət cədvəli</span>
+                </a>
+            </li>
+            <li>
+                <a href="jurnal.html">
+                <span  class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                <span class="title">Elektron jurnal</span>
+                </a>
+            </li>
+            <li>
+                <a href="transkript.html">
+                <span  class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                <span class="title">Transkript</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="turnstile.html">
+                <span  class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="title">Turniket qeydləri</span>
+                </a>
+            </li>
+            <li>
+                <li>
+                    <a href="onlineservice.html">
+                    <span  class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="title">Onlayn xidmətlər</span>
+                    </a>
+                </li>
+                <li>
+                    <li>
+                        <a href="booksearch.html">
+                        <span  class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Kitabxana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html">
+                        <span  class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Tənzimləmələr</span>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <li>
+                            <a href="contact.html">
+                            <span  class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="title">Əlaqə</span>
+                            </a>
+                        </li>
+                        <li>
+
+                <a href="signin.html">
+                <span  class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                <span class="title">Çıxış</span>
+                </a>
+                <br/>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();">
+
+            </div>
+            <div class="search">
+                <label for="">
+                  <input type="text" placeholder="səhifədə axtarış edin...">  
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+                
+            </div>
+            <div class="user">
+                <a href="index.html"><img src="img/3x4.jpg" alt="shekil yuklenmedi"></a>
+            </div>
+        </div>
+<!-- person edit -->
+<div class="table">
+    <h2>Tənzimləmələr</h2>
+    <br>
+      <a class="serviceBtn" href="setting.html">Şifrəni yeniləmək</a>
+      <a class="serviceBtn" style="border-color: red;" href="myordersbook.html">Ümumi məlumatlarım</a>
+      <p style="padding-top: 10px;"></p>
+      <hr>
+      <p style="padding-top: 10px;"></p>
+      <!-- person information edit -->
+      <table style="width: 100%;">
+        <tr>
+        <td class="priceTitle">
+          Ad, Soyad, Ata adı:
+        </td>
+        <td>Amin Həsənov Ədalət</td>
+      </tr>
+        
+      <tr>
+        <td class="priceTitle">
+          Mobil nömrə:
+        </td>
+        <td>077-556-21-21</td>
+      </tr>
+
+      <tr>
+        <td class="priceTitle">E-mail:</td>
+        <td>aminhasanov@oyu.edu.az</td>
+      </tr>
+
+      <tr>
+        <td class="priceTitle">Qeydiyyat ünvanı:</td>
+        <td>Azərbaycan r., Gədəbəy ş., Ərtəpə k.</td>
+      </tr>
+      </table>
+
+<button class="btnEdit" id="myBtn">Yenilə</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span title="Bağla" class="close">&times;</span>
+    
+    <!-- edit -->
+    <form action="#">
+      <p class="pTag"> Ad, Soyad, Ata adı:
+    <input class="formControlA" type="text" value="Amin Həsənov Ədalət" placeholder="mütləq daxil edin..." required>
+    </p>
+
+    <p class="pTag"> Mobil nömrə:
+      <input class="formControlM" type="text" value="077-556-21-21" placeholder="mütləq daxil edin..." required>
+      </p>
+
+      <p class="pTag"> E-mail:
+        <input class="formControlE" type="email" value="aminhasanov@oyu.edu.az" placeholder="mütləq daxil edin..." required>
+        </p>
+
+        <p class="pTag"> Qeydiyyat ünvanı:
+          <input class="formControlQ" type="text" value="Azərbaycan r., Gədəbəy ş., Ərtəpə k." placeholder="mütləq daxil edin..." required>
+          </p>
+          <button class="btnSave">Yadda saxla</button>
+
+     </form>
+  </div>
+
+</div>
+      <!-- description -->
+      <div class="description">
+        <pre>
+          <u style="font: bold 18px Arial;">Diqqət! Səhv daxil edilmiş bütün məlumatlara görə tələbə məsuliyyət daşıyır.</u>
+          Digər üzürlü səbəbdən baş verən problemlərə görə tədris şöbəsinə vaxt itirmədən müraciət edin!!!
+        </pre>
+      </div>
+    </div>
+       </div>
+    </div>
+
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        // edit
+         // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      var btn = document.getElementById("myBtn");
+      
+      var span = document.getElementsByClassName("close")[0];
+      
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+    </script>
+</body>
+</html>

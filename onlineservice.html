@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYU-TMS</title>
+</head>
+<body>
+    <div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="https://www.oyu.edu.az/" target="_blank">
+                <span  class="icon">
+                    <img class="logoImg" src="img/logo-small.png" width="50" alt="shekil yuklenmedi">
+                </span>
+                <span class="title"><h5>Odlar Yurdu Universiteti</h5></span>
+            </a>
+            </li>
+            <li>
+                <a href="index.html">
+                <span  class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span class="title">Ana səhifə</span>
+                </a>
+            </li>
+            <li>
+                <a href="bullhorn.html">
+                <span  class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+                <span class="title">Elanlar</span>
+                </a>
+            </li>
+            <li>
+                <a href="priceTable.html">
+                <span  class="icon"><i class="fa fa-500px" aria-hidden="true"></i></span>
+                <span class="title">Qiymət cədvəli</span>
+                </a>
+            </li>
+            <li>
+                <a href="jurnal.html">
+                <span  class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                <span class="title">Elektron jurnal</span>
+                </a>
+            </li>
+            <li>
+                <a href="transkript.html">
+                <span  class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                <span class="title">Transkript</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="turnstile.html">
+                <span  class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="title">Turniket qeydləri</span>
+                </a>
+            </li>
+            <li>
+                <li>
+                    <a href="onlineservice.html">
+                    <span  class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="title">Onlayn xidmətlər</span>
+                    </a>
+                </li>
+                <li>
+                    <li>
+                        <a href="booksearch.html">
+                        <span  class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Kitabxana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html">
+                        <span  class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Tənzimləmələr</span>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <li>
+                            <a href="contact.html">
+                            <span  class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="title">Əlaqə</span>
+                            </a>
+                        </li>
+                        <li>
+
+                <a href="signin.html">
+                <span  class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                <span class="title">Çıxış</span>
+                </a>
+                <br/>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();">
+
+            </div>
+            <div class="search">
+                <label for="">
+                  <input type="text" placeholder="səhifədə axtarış edin...">  
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+                
+            </div>
+            <div class="user">
+                <a href="index.html"><img src="img/3x4.jpg" alt="shekil yuklenmedi"></a>
+            </div>
+        </div>
+<!-- online service -->
+<div class="table">
+    <form action="#">
+      <a style="border-color: red;" class="serviceBtn" href="onlineservice.html">Sifariş ver</a>
+      <a class="serviceBtn" href="myorders.html">Sifarişlərim</a>
+      <p style="padding-top: 10px;"></p>
+      <hr>
+      <p style="padding-top: 10px;"></p>
+      <h2>Onlayn sifarişlər</h2>
+
+      <p style="padding-top: 10px;"></p>
+
+      <p class="pTag"> Xidmət növünü seçin:
+        <select class="formControl" name="service" id="service">
+          <option value="choose" selected disabled>Seçin</option>
+          <option value="a">Arayış</option>
+          <option value="t">Transkript(Qiymət cədvəli)</option>
+          <option value="f">Forma №10 (Hərbi komissarlıq üçün</option>
+        </select>
+        <button class="btnShow">Davam et</button>
+      </p>
+      </form>
+      
+      <br>
+      <hr>
+      <!-- description -->
+      <div class="description">
+        <pre>
+* Sifariş verdikdən sonra sənədin hazırlanması barədə məlumata "sifarişlərim" menusundan baxmaq lazımdır.
+* Sənədlər 3 iş günü ərzində hazırlanır və "sifarişlərim" menusunda qeyd olunur.
+* Yalnız "sifariş hazırlanıb" qeydini gördükdən sonra yaxınlaşıb sənədi aşağıdakı şöbələrdən götürmək olar:
+- Hərbi komissarlığa təqdim etmək üçün arayışı (Forma 10) Xüsusi şöbədən
+- Arayış və transkriptləri bakalavrlar Tədris şöbəsindən, magistrantlar Magistratura və Doktorantura şöbəsindən alir.
+        </pre>
+      </div>
+    </div>
+
+</div>
+</div>
+
+
+<script>
+    function toggleMenu(){
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
